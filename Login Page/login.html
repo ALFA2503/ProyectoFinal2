@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Iniciar Sesión</title>
+</head>
+
+<body>
+    <nav>
+        <a href="../Landin Page/index.html">Inicio</a>
+        <a href="../Main Page/main.html">Nuevos!</a>
+        <a href="../Main Page/favs.html">Favoritos</a>
+        <a href="../Login Page/login.html">Inicia Sesion</a>
+      </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css"/>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<div class="login-wrapper">
+    <form id = "login">
+        <h1><span>NFTS |</span> Inicio de Sesion</h1>
+
+        <div class="input-row">
+            <span class="icon"><i class="fa fa-at"></i></span>
+            <input type="text" placeholder="Correo" id="loginEmail" name="correo" />
+        </div>
+
+        <div class="input-row">
+            <span class="icon"><i class="fa fa-lock"></i></span>
+            <input type="password" placeholder="Contraseña" id="loginPassword" name="contrasena" />
+        </div>
+
+
+       
+
+        <div id = buttonLogin class="submit-row">
+            <input type="button" value="Confirmar &raquo;" onclick="validUser()" />
+            <span class="reset"><a href="../Register Page/register.html">
+                No tienes cuenta?</a></span>
+        </div>
+
+
+    </form>
+    <script src='/model/Users.js'></script>
+    <script src='/model/Ntfs.js'></script>
+    <script src='../app.js'></script>
+</div>
+</body>
+</html>
