@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 const getNtfs = async () => {
   try {
-      const response = await fetch('https://raw.githubusercontent.com/ALFA2503/ProyectoFinal/main/datos.json?token=GHSAT0AAAAAACK3Z5JPHUSL6ET77OLOVJDAZLFL2PA');
+      const response = await fetch('https://raw.githubusercontent.com/ALFA2503/ProyectoFinal2/main/datos.json');
       const ntfsData = await response.json();
 
       const ntfsList = ntfsData.map(ntfs => {
